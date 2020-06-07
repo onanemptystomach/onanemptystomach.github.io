@@ -1,0 +1,582 @@
+<HTML>
+<HEAD>
+	<TITLE> About Us </TITLE>
+	<STYLE type='text/css'>
+		body{
+			font-size: 100%;
+		}
+		#mainheader{
+	font-family:'Avenir';
+}
+		#container {
+			width: 101vw;
+			height: 6vw;
+			top: -1%;
+			left: -1%;
+			position: fixed;
+			background-color: #F5F4DB;
+			z-index: 4;
+		}
+
+
+
+		#sidebtn{
+			z-index:1;
+			margin-left: 0.5vw;
+			position: fixed;
+			width: 5%;
+			cursor: pointer;
+			z-index: 5;
+		}
+.sidenav{
+	width: 0;
+	height: 101%;
+	top: -1%;
+	left: -1%;
+	z-index: 6;
+	position: fixed;
+	background-color: #F5F4DB;
+	border: solid 0.5px white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 7%;
+	font-family: 'Avenir';
+
+
+
+}
+.sidenav a{
+	padding: 5% 10% 5% 16%;
+	text-decoration: none;
+	font-size: 2vw;
+	display: block;
+	transition: 0.3s;
+	color: #ACCBE1;
+	position: relative;
+}
+	
+.sidenav a:hover{
+	color: #7C98B3;
+}
+
+.sidenav .closebtn{
+	position: absolute;
+	top: 2%;
+	left: 1%;
+	font-size: 4vw;
+	margin-left: 67%;
+
+}
+
+#logo{
+	z-index:10;
+	position: absolute;
+	margin-top: 1vw;
+	margin-left: 33vw;
+	position: fixed;
+	width: 34vw;
+}
+
+
+#donatebutton{
+	width: 8.5vw;
+	height: 2.5vw;
+	background-color: #C0D6E3;
+	position: fixed;
+	margin-top: -1.5vw;
+	z-index:7;
+	margin-left: 88vw;
+	font-family:'Avenir';
+	color: white;
+	font-size: 1.5vw;
+	text-align: center;
+	padding-top: 0.5vw;
+	-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+
+}
+#donatebutton:hover{
+	background-color: #637081;
+	cursor: pointer;
+}
+#logo2{
+	width:15vw;
+	padding-top:0.5vw;
+	margin-left: 42vw;
+	position: fixed;
+	z-index:7;
+}
+		#elliepic3{
+			width: 10%;
+			border: solid 6px #637081;
+			position: absolute;
+			top:56%;
+			left:24.5%;
+		}
+		#elliepic1{
+			width:13%;
+			border: solid 6px #637081;
+			position: absolute;
+			top: 43%;
+			left: 36%;
+		}
+		#elliepic2{
+			width:8%;
+			border: solid 6px #637081;
+			position: absolute;
+			top: 39%;
+			left: 26.5%;
+		}
+		#vivpic1{
+			width: 9%;
+			border: solid 6px #637081;
+			position: absolute;
+			top:58%;
+			left:62%;
+		}
+		#vivpic2{
+			width: 10%;
+			border: solid 6px #637081;
+			position: absolute;
+			top:37%;
+			left:62%;
+		}
+		#vivpic3{
+			width: 10%;
+			border: solid 6px #637081;
+			position: absolute;
+			top: 40%;
+			left:50.5%;
+		}
+		.title{
+			font-family: 'Avenir';
+			font-size: 3vw;
+			color: #323D4C;
+			position: absolute;
+			top: 50%;
+			left: 20%;
+		}
+
+		#ellie{
+			margin-top: -7vw;
+			margin-left:-17vw;
+		}
+		#vivian{
+			margin-top: -7vw;
+			margin-left: 57vw;
+		}
+		
+		#ellietext{
+			font-family:'Avenir';
+			font-size: 1.4vw;
+			margin-top: 9vw;
+			margin-right: 78vw;
+			margin-left: 2vw;
+		}
+		#vivtext{
+			font-family:'Avenir';
+			font-size: 1.4vw;
+			margin-right: 2vw;
+			margin-left:75vw;
+			margin-top: -21vw;
+		}
+		#horizontalline1{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 35vw;
+			padding-top: 5vw;
+			margin-left: 32.5vw;
+		}
+		#horizontalline2{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 15vw;
+			padding-top: 0.5vw;
+			margin-left: 41.8vw;
+		}
+		#logobig{
+			padding-top: 6vw;
+			width: 50vw;
+		}
+		#logotitle{
+			font-family: 'Avenir';
+			font-size: 2.5vw;
+			padding-top: 6vw;
+			color: #323D4C;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+		}
+		#logotitle:hover{
+			color:#7C9CC8;
+			cursor: pointer;
+		}
+		#logotext{
+			font-family:'Avenir';
+			font-size: 1.25vw;
+			margin-top: -14vw;
+			padding-left: 53vw;
+			padding-right: 2vw;
+		}
+		#horizontalline3{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 35vw;
+			padding-top: 5vw;
+			margin-left: 32.5vw;
+		}
+		#horizontalline4{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 15vw;
+			padding-top: 0.5vw;
+			margin-left: 41.8vw;
+		}
+		#goaltitle{
+			font-family: 'Avenir';
+			font-size: 2.5vw;
+			padding-top: 6vw;
+			color: #323D4C;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+		}
+		#goaltitle:hover{
+			color:#7C9CC8;
+			cursor: pointer;
+		}
+		#goaltext{
+			font-family:'Avenir';
+			font-size: 1.25vw;
+			margin-top: 4vw;
+			padding-left: 2vw;
+			padding-right: 2vw;
+		}
+		#abti{
+			font-family: 'Avenir';
+			font-size: 4vw;
+			color: #323D4C;
+			position: relative;
+			padding-top: 11vw;
+			text-align: center;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+		}
+		#abti:hover{
+			color:#7C9CC8;
+			cursor: pointer;
+		}
+		#horizontalline5{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 35vw;
+			margin-top: 10vw;
+			margin-left: 32.5vw;
+		}
+		#horizontalline6{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 15vw;
+			padding-top: 0.5vw;
+			margin-left: 41.8vw;
+		}
+		#footerbox{
+		width: 101vw;
+		top:-1%;
+		left:-1%;
+		height: 28vw;
+		z-index:-1;
+		margin-top: 102vw;
+		position: absolute;
+		background-color: #F5F4DB;
+		overflow-x: hidden;
+
+		}
+	.reftext{
+  font-family: 'Avenir';
+  margin-top: 13vw;
+  padding-left: 1vw;
+  position: absolute;
+  z-index: 1;
+}
+
+	.reftext a{
+		text-decoration: none;
+	}
+	#rlist{
+		text-align: center;
+		left: 2%;
+		  font-size: 1.2vw;
+	}
+
+	.info{
+		color: #7C98B3;
+		font-size:1.1vw;
+	}
+#subscribetext{
+	font-family:'Avenir';
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+}
+#mc_embed_signup{
+	padding-left: 73%;
+	margin-top: 9.4vw;
+	font-family:'Avenir';
+	z-index: 1;
+}
+
+.box{
+	width:10%;
+	height: 5.3%;
+  background-color: #7C98B3;
+  position: absolute;
+  font-family: 'Avenir';
+  color: white;
+  font-size:1.6vw;
+  border: none;
+  z-index: 1;
+  -webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+.box:hover{
+	cursor: pointer;
+	background-color:#66798C;
+	z-index: 1;
+}
+
+#vertical1{
+	border-left: 2px solid #66798C;
+	height: 23vw;
+	z-index: 3;
+	position: absolute;
+	margin-left: 24.5vw;
+	margin-top: 10.25vw;
+}
+#citationbutton{
+	width:12vw;
+	height: 2.8vw;
+	background-color: #7C98B3;
+	z-index: 6;
+	position: relative;
+	margin-left: -30.5vw;
+	margin-top: -13vw;
+	font-family: 'Avenir';
+  	color: white;
+  	font-size:1.6vw;
+  	text-align: center;
+  	padding-top: 0.5vw;
+  	-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+#citationbutton:hover{
+	background-color: #66798C;
+	cursor: pointer;
+}
+#checkout{
+font-family:'Avenir';
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	font-weight: bold;
+	margin-top:-8vw;
+	margin-left: -35vw;
+}
+#referencetitle{
+	position: relative;
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	font-weight: bold;
+	margin-top: -3vw;
+	padding-bottom: 1vw;
+	margin-left: 2.5vw;
+}
+#vertical2{
+	border-left: 2px solid #66798C;
+	height: 23vw;
+	z-index: 3;
+	position: absolute;
+	margin-left: -2.5vw;
+	margin-top: -2.5vw;
+}
+#join{
+	font-family: 'Avenir';
+	font-size: 3vw;
+	color: #EF7E7E;
+	margin-left: -35.5vw;
+	margin-top: 8vw;
+}
+#contactus{
+	font-family:'Avenir';
+	font-size: 1.5vw;
+	margin-left: -44vw;
+	margin-top: 3vw;
+	color: #637081;
+	margin-right: 25vw;
+}
+	</STYLE>
+<BODY bgcolor=white>
+	<script>
+	function openNav (){
+		document.getElementById("sidenavmain").style.width="20%";
+		document.getElementById("cause").style.opacity="100%";
+		document.getElementById("don").style.opacity="100%";
+		document.getElementById("org").style.opacity="100%";	
+		document.getElementById("covid").style.opacity="100%";
+		document.getElementById("u").style.opacity="100%";
+		document.getElementById("about").style.opacity="100%";
+		document.getElementById("index").style.opacity="100%";
+	}
+	function closeNav (){
+		document.getElementById("sidenavmain").style.width="0";
+		document.getElementById("index").style.opacity="0";
+		document.getElementById("cause").style.opacity="0";
+		document.getElementById("don").style.opacity="0";
+		document.getElementById("org").style.opacity="0";	
+		document.getElementById("covid").style.opacity="0";
+		document.getElementById("u").style.opacity="0";
+		document.getElementById("about").style.opacity="0";
+	}
+	</script>
+
+<DIV id='container'>
+</DIV>
+
+	<DIV id='sidenavmain' class='sidenav'> 
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+<a href="index.html" id="index"> Home </a>
+		<a href="causeandeffect.html" id="cause"> Causes and Effects </a>
+		<a href="organizations.html" id="org"> Organizations </a>
+		<a href="donations.html" id="don"> Donations </a>
+		<a href="whatucando.html" id="u"> What You Can Do to Help and More </a>
+		<a href="covid.html" id="covid"> COVID-19 </a>
+		<a href="aboutus.html" id="about"> About Us </a>
+	</DIV>
+	<SPAN onclick="openNav();">  <IMG id='sidebtn' src='websiteimages/menu button.png'> </IMG> </SPAN>
+	
+</DIV>
+ <IMG id='logo' src="websiteimages/header_text.png" onmouseover="document.getElementById('logo2').style.opacity='100%'; document.getElementById('logo').style.opacity='0';" onmouseout="document.getElementById('logo2').style.opacity='0'; document.getElementById('logo').style.opacity='100%';"> </IMG>
+
+
+  <img id=logo2 style="opacity: 0;" src="websiteimages/onanemptystomachlogo1.png"> </img>
+<br></br>
+<a href="donations.html"> <DIV id='donatebutton'> Donate</DIV> </a>
+	<DIV id=horizontalline5> </DIV> 
+	<DIV id=abti> ABOUT US </DIV>
+	<DIV id=horizontalline6> </DIV> 
+	<IMG id=elliepic3 src='websiteimages/elliepic3.jpeg'> </IMG>
+	<IMG id=elliepic1 src='websiteimages/elliepic1.jpeg'> </IMG>
+	<IMG id=elliepic2 src='websiteimages/gym.jpg'> </IMG>
+	<IMG id=vivpic1 src='websiteimages/vivpic1.jpg'> </IMG>
+	<IMG id=vivpic2 src='websiteimages/vivpic2.jpg'> </IMG>
+	<IMG id=vivpic3 src='websiteimages/vivpic3.jpg'> </IMG>
+	<DIV id=ellie class=title onmouseover="document.getElementById('ellie').style.color='#7C9CC8';" onmouseout="document.getElementById('ellie').style.color='#323D4C';"> Ellie Chen </DIV>
+	<DIV id=vivian class=title onmouseover="document.getElementById('vivian').style.color='#7C9CC8';" onmouseout="document.getElementById('vivian').style.color='#323D4C';"> Vivian Ooi </DIV>
+	<DIV id=ellietext> Ellie Chen is a very diligent student who enjoys listening to music, playing the violin, and wasting her precious time on Netflix TV shows and movies. Ellie is very intelligent and she is an extremely talented artist. She is currently holding a position in the Global Issues Network at school. </DIV>
+
+	<DIV id=vivtext> Vivian Ooi is a very diligent student as well. She does many activities every week, such as ballet, piano, and violin, and is participating in many school clubs as well. Vivian enjoys spending her time reading, wasting her time on Youtube ASMR Mukbang videos, and dancing K-pop with her friends. </DIV>
+
+	 <DIV id=horizontalline1> </DIV> 
+
+	<DIV id=logotitle>  <CENTER> OUR LOGO </CENTER></DIV>
+	<DIV id=horizontalline2> </DIV> 
+	<IMG id=logobig src="websiteimages/onanemptystomachlogo.png"> </IMG>
+
+	<DIV id=logotext> Our logo symbolizes the three main levels of hunger: chronic hunger, acute hunger, and no hunger, by depicting varying amounts of rice in each bowl. The bowl itself can be thought of representing the person's stomach, and the rice can be thought of as food in general. Therefore, the empty rice bowl symbolizes an empty stomach, a half-full rice bowl symbolizes a fed, but not well-fed stomach, and the full bowl symbolizes a stomach that has been fed adequately, or perhaps excessively. We chose rice as our food, because rice is the main symbol of health, life and nourishment.  </DIV>
+
+	<DIV id=horizontalline3> </DIV> 
+	<DIV id=goaltitle>  <CENTER> OUR GOAL </CENTER></DIV>
+	<DIV id=horizontalline4> </DIV> 
+
+	<DIV id=goaltext> Ellie and Vivian want to contribute to the eradication of world hunger. Since they are young, they hope to spread awareness of the issue and to provide a general lens for the public so that people can see the real truth, and feel more motivated to take action.  </DIV>
+
+
+<DIV id="footerbox"> 
+	</DIV>
+	<DIV class='reftext'>
+		<DIV id="referencetitle"> External References </DIV>
+  	<TABLE id='rlist'>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.worldbank.org/"> World Bank </a> </TD>
+  	</TR>
+
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.mercycorps.org/"> Mercy Corps </a> </TD>
+ 	 </TR>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.un.org/sustainabledevelopment/hunger/"> UN Hunger Goal </a> </TD>
+ 	 </TR>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.wfp.org/"> United Nations World Food Programme </a> </TD>
+ 	 </TR>
+ 	 <TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.thp.org/"> The Hunger Project </a> </TD>
+  	</TR>
+ 	 <TR>
+      <TD style="padding-bottom: 2vw;"> <a href="https://www.unicef.org/"> UNICEF </a> </TD>
+ 	 </TR>
+	</TABLE>
+	</DIV>
+	<DIV id='vertical1'> </DIV>
+<!-- Form --->
+<div id="mc_embed_signup">
+<form action="https://gmail.us10.list-manage.com/subscribe/post?u=fbdb59f88ddf5888285b62961&amp;id=50a07a499d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2 id="subscribetext">Subscribe to Save Stomachs</h2>
+<div class="indicates-required" style="color:#7C98B3; padding-bottom:3%; font-size:1vw;"><span class="asterisk" style="color:#7C98B3;">*</span> Indicates field required</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-EMAIL" class="info" style="font-size:1.1vw;">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" style="font-size:1vw;" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-FNAME" class="info" style="font-size:1.1vw;">  First Name </label> 
+	<input type="text" value="" style="font-size:1vw;" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-LNAME" class="info" style="font-size:1.1vw;">Last Name </label>
+	<input type="text" value=""  style="font-size:1vw;" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group size1of2" style="padding-bottom:3%;">
+	<label for="mce-BIRTHDAY-month" class="info" style="font-size:1.1vw;">Birthday </label>
+	<div class="datefield">
+		<span class="subfield monthfield"><input class="birthday " style="font-size:1vw;" type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" style="font-size:1vw;"></span> / 
+		<span class="subfield dayfield"><input class="birthday " style="font-size:1vw;" type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span> 
+		<span class="small-meta nowrap" style="font-size:0.9vw; color:#7C98B3;">( mm / dd )</span>
+	</div>
+</div>	
+<div id="mce-responses" class="clear" style="padding-bottom:3%;">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>   
+
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"> <input type="text" name="b_fbdb59f88ddf5888285b62961_50a07a499d" tabindex="-1" value="">
+
+    </div>
+    <div>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="box"> </div>
+</form>
+<DIV id="citationbutton"> Citations here </DIV>
+<DIV id="checkout"> Check out the Citations </DIV>
+<DIV id='vertical2'> </DIV>
+<DIV id='join'> JOIN THE FIGHT. </DIV>
+<DIV id=contactus> Contact us at <SPAN style="font-size: 2vw; font-weight: bold;"> onanemptystomach.contact@gmail.com. </SPAN> </DIV>
+</BODY>
+</HEAD>

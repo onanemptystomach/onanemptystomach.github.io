@@ -1,0 +1,590 @@
+<HTML>
+<HEAD>
+<TITLE> COVID-19 </TITLE>
+<STYLE type="text/css">
+	body{
+		overflow-x: hidden;
+		font-family:'Avenir';
+	}
+	#mainheader{
+	font-family:'Avenir';
+}
+		#container {
+			width: 101vw;
+			height: 6vw;
+			top: -1%;
+			left: -1%;
+			position: fixed;
+			background-color: #F5F4DB;
+			z-index: 4;
+		}
+
+
+
+		#sidebtn{
+			z-index:1;
+			margin-left: 0.5vw;
+			position: fixed;
+			width: 5%;
+			cursor: pointer;
+			z-index: 5;
+		}
+.sidenav{
+	width: 0;
+	height: 101%;
+	top: -1%;
+	left: -1%;
+	z-index: 6;
+	position: fixed;
+	background-color: #F5F4DB;
+	border: solid 0.5px white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 7%;
+	font-family: 'Avenir';
+
+
+}
+.sidenav a{
+	padding: 5% 10% 5% 16%;
+	text-decoration: none;
+	font-size: 2vw;
+	display: block;
+	transition: 0.3s;
+	color: #ACCBE1;
+	position: relative;
+	-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+	
+.sidenav a:hover{
+	color: #7C98B3;
+}
+
+.sidenav .closebtn{
+	position: absolute;
+	top: 2%;
+	left: 1%;
+	font-size: 4vw;
+	margin-left: 67%;
+
+}
+
+#logo{
+	z-index:10;
+	position: absolute;
+	margin-top: 1vw;
+	margin-left: 33vw;
+	position: fixed;
+	width: 34vw;
+}
+
+
+#donatebutton{
+	width: 8.5vw;
+	height: 2.5vw;
+	background-color: #C0D6E3;
+	position: fixed;
+	margin-top: -2vw;
+	z-index:7;
+	margin-left: 88vw;
+	font-family:'Avenir';
+	color: white;
+	font-size: 1.5vw;
+	text-align: center;
+	padding-top: 0.5vw;
+	-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+
+}
+#donatebutton:hover{
+	background-color: #637081;
+	cursor: pointer;
+}
+#logo2{
+	width:15vw;
+	padding-top:0.5vw;
+	margin-left: 42vw;
+	position: fixed;
+	z-index:7;
+}
+#horizontalline5{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 35vw;
+			margin-top: 10vw;
+			margin-left: 32.5vw;
+		}
+		#horizontalline6{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 15vw;
+			padding-top: 0.5vw;
+			margin-left: 41.8vw;
+		}
+	#covidtitle{
+			
+			font-size: 4vw;
+			color: #323D4C;
+			position: relative;
+			padding-top: 11vw;
+			text-align: center;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+		}
+		#covidtitle:hover{
+			color:#7C9CC8;
+			cursor: pointer;
+		}
+		#covidintro{
+			
+			font-size: 1.5vw;
+			margin-left: 4vw;
+			margin-right: 4vw;
+		}
+		.leftable{
+			font-size: 2.5vw;
+			color: #323D4C;
+			padding-bottom: 10vw;
+			margin-left: 2vw;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+		}
+		.leftable:hover{
+			color:#7C9CC8;
+			cursor: pointer;
+		}
+		.rightable{
+			font-size: 2.5vw;
+			color: #323D4C;
+			margin-left: 77vw;
+			text-align: right;
+			padding-bottom: 10vw;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+		}
+		.rightable:hover{
+			color:#7C9CC8;
+			cursor: pointer;
+		}
+		#tablel{
+			margin-top: -34vw;
+		}
+		#tabler{
+			margin-top: 5vw;
+		}
+		#explanation{
+			font-size: 1.5vw;
+			text-align: center;
+		}
+		.picsss{
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+			opacity:0;
+			position: absolute;
+		}
+		#tourismpic{
+			width: 35vw;
+			margin-top: -51vw;
+			margin-left: 33vw;
+
+		}
+		.mainsmoltext{
+			font-size: 1.5vw;
+			-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+			position: absolute;
+			opacity: 0;
+		}
+		#tourismtext{
+			margin-left: 26vw;
+			margin-right: 16vw;
+			margin-top: -26vw;
+		}
+		#schoolpic{
+			width: 50vw;
+			margin-top: -53vw;
+			margin-left: 24vw;
+		}
+		#schooltext{	
+			margin-left: 25vw;
+			margin-right: 18vw;
+			margin-top: -24vw;
+		}
+		#commoditypic{
+			width: 35vw;
+			margin-top: -53vw;
+			margin-left: 33vw;
+		}
+		#commoditytext{
+			margin-left: 24vw;
+			margin-right: 18vw;
+			margin-top: -20vw;
+		}
+		#businesspic{
+			width: 35vw;
+			margin-top: -49vw;
+			margin-left: 33vw;
+		}
+		#businesstext{
+			margin-left: 26vw;
+			margin-right: 16vw;
+			margin-top: -22vw;
+		}
+		#foodpic{
+			width: 35vw;
+			margin-top: -51vw;
+			margin-left: 33vw;
+		}
+		#foodtext{
+			margin-left: 26vw;
+			margin-right: 16vw;
+			margin-top: -20vw;
+		}
+		#shortagepic{
+			width: 35vw;
+			margin-top: -49vw;
+			margin-left: 33vw;
+		}
+		#shortagetext{
+			margin-left: 26vw;
+			margin-right: 16vw;
+			margin-top: -22vw;
+		}
+
+		#footerbox{
+		width: 101vw;
+		margin-top: 7vw;
+		left:-1%;
+		height: 28vw;
+		z-index:-1;
+		position: absolute;
+		background-color: #F5F4DB;
+		overflow-x: hidden;
+
+		}
+	.reftext{
+  font-family: 'Avenir';
+  margin-top: 13vw;
+  padding-left: 1vw;
+  position: absolute;
+  z-index: 1;
+}
+
+	.reftext a{
+		text-decoration: none;
+	}
+	#rlist{
+		text-align: center;
+		left: 2%;
+		  font-size: 1.2vw;
+	}
+
+	.info{
+		color: #7C98B3;
+		font-size:1.1vw;
+	}
+#subscribetext{
+	font-family:'Avenir';
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+}
+#mc_embed_signup{
+	padding-left: 73%;
+	margin-top: 9.4vw;
+	font-family:'Avenir';
+	z-index: 1;
+}
+
+.box{
+	width:10%;
+	height: 5.3%;
+  background-color: #7C98B3;
+  position: absolute;
+  font-family: 'Avenir';
+  color: white;
+  font-size:1.6vw;
+  border: none;
+  z-index: 1;
+  -webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+.box:hover{
+	cursor: pointer;
+	background-color:#66798C;
+	z-index: 1;
+}
+
+#vertical1{
+	border-left: 2px solid #66798C;
+	height: 23vw;
+	z-index: 3;
+	position: absolute;
+	margin-left: 24.5vw;
+	margin-top: 10.25vw;
+}
+#citationbutton{
+	width:12vw;
+	height: 2.8vw;
+	background-color: #7C98B3;
+	z-index: 6;
+	position: relative;
+	margin-left: -30.5vw;
+	margin-top: -13vw;
+	font-family: 'Avenir';
+  	color: white;
+  	font-size:1.6vw;
+  	text-align: center;
+  	padding-top: 0.5vw;
+  	-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+#citationbutton:hover{
+	background-color: #66798C;
+	cursor: pointer;
+}
+#checkout{
+font-family:'Avenir';
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	font-weight: bold;
+	margin-top:-8vw;
+	margin-left: -35vw;
+}
+#referencetitle{
+	position: relative;
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	font-weight: bold;
+	margin-top: -3vw;
+	padding-bottom: 1vw;
+	margin-left: 2.5vw;
+}
+#vertical2{
+	border-left: 2px solid #66798C;
+	height: 23vw;
+	z-index: 3;
+	position: absolute;
+	margin-left: -2.5vw;
+	margin-top: -2.5vw;
+}
+#join{
+	font-family: 'Avenir';
+	font-size: 3vw;
+	color: #EF7E7E;
+	margin-left: -35.5vw;
+	margin-top: 8vw;
+}
+#contactus{
+	font-family:'Avenir';
+	font-size: 1.5vw;
+	margin-left: -44vw;
+	margin-top: 3vw;
+	color: #637081;
+	margin-right: 25vw;
+}
+</STYLE>
+</HEAD>
+<BODY>
+	<script>
+	function openNav (){
+		document.getElementById("sidenavmain").style.width="20%";
+		document.getElementById("cause").style.opacity="100%";
+		document.getElementById("don").style.opacity="100%";
+		document.getElementById("org").style.opacity="100%";	
+		document.getElementById("covid").style.opacity="100%";
+		document.getElementById("u").style.opacity="100%";
+		document.getElementById("index").style.opacity="100%";
+		document.getElementById("about").style.opacity="100%";
+	}
+	function closeNav (){
+		document.getElementById("sidenavmain").style.width="0";
+		document.getElementById("index").style.opacity="0";
+		document.getElementById("cause").style.opacity="0";
+		document.getElementById("don").style.opacity="0";
+		document.getElementById("org").style.opacity="0";	
+		document.getElementById("covid").style.opacity="0";
+		document.getElementById("u").style.opacity="0";
+		document.getElementById("about").style.opacity="0";
+	}
+	</script>
+
+<DIV id='container'>
+</DIV>
+
+	<DIV id='sidenavmain' class='sidenav'> 
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+		<a href="index.html" id="index"> Home </a>
+		<a href="causeandeffect.html" id="cause"> Causes and Effects </a>
+		<a href="organizations.html" id="org"> Organizations </a>
+		<a href="donations.html" id="don"> Donations </a>
+		<a href="whatucando.html" id="u"> What You Can Do to Help and More </a>
+		<a href="covid.html" id="covid"> COVID-19 </a>
+		<a href="aboutus.html" id="about"> About Us </a>
+	</DIV>
+	<SPAN onclick="openNav();">  <IMG id='sidebtn' src='websiteimages/menu button.png'> </IMG> </SPAN>
+	
+</DIV>
+ <IMG id='logo' src="websiteimages/header_text.png" onmouseover="document.getElementById('logo2').style.opacity='100%'; document.getElementById('logo').style.opacity='0';" onmouseout="document.getElementById('logo2').style.opacity='0'; document.getElementById('logo').style.opacity='100%';"> </IMG>
+
+
+  <img id=logo2 style="opacity: 0;" src="websiteimages/onanemptystomachlogo1.png"> </img>
+<br></br>
+<a href="donations.html"> <DIV id='donatebutton'> Donate</DIV> </a>
+	<DIV id=horizontalline5> </DIV>
+	<DIV id=covidtitle> COVID-19 </DIV>
+	<DIV id=horizontalline6> </DIV>
+<BR> </BR><BR> </BR>
+	<DIV id=covidintro> Coronavirus threatens to starve even more people. Experts say that by the end of 2020 the number of people suffering from acute starvation could be 265 million people. Before the pandemic there were 135 people starving from acute starvation but now with the pandemic about 130 million more people could go hungry. </DIV>
+	<BR> </BR>
+	<span style="margin-left: 4vw"> <iframe style="width: 43vw; height: 30vw;" src="https://www.youtube.com/embed/5N1993jVrb8"></iframe> </span> 
+<IMG src="websiteimages/pplhungry.png" style="width: 47vw"> </IMG>
+<BR> </BR>
+<DIV id=explanation> Hover over the words below to view how coronavirus is affecting hunger across the world. </DIV>
+<TABLE style="width: 25vw" id=tabler>
+	<TR>
+		<TD> <DIV class=rightable onmouseover="document.getElementById('businesspic').style.opacity='100%'; document.getElementById('businesstext').style.opacity='100%';" onmouseout="document.getElementById('businesspic').style.opacity='0'; document.getElementById('businesstext').style.opacity='0';"> Businesses/Jobs </DIV> </TD>
+	</TR>
+	<TR>
+		<TD> <DIV class=rightable onmouseover="document.getElementById('schoolpic').style.opacity='100%'; document.getElementById('schooltext').style.opacity='100%';" onmouseout="document.getElementById('schoolpic').style.opacity='0'; document.getElementById('schooltext').style.opacity='0';"> Schools </DIV> </TD>
+	</TR>
+	<TR>
+		<TD> <DIV class=rightable onmouseover="document.getElementById('tourismpic').style.opacity='100%'; document.getElementById('tourismtext').style.opacity='100%';" onmouseout="document.getElementById('tourismpic').style.opacity='0'; document.getElementById('tourismtext').style.opacity='0';"> Tourism </DIV> </TD>
+	</TR>
+</TABLE>
+<TABLE style="width: 25vw" id=tablel>
+	<TR>
+		<TD> <DIV class=leftable onmouseover="document.getElementById('foodpic').style.opacity='100%'; document.getElementById('foodtext').style.opacity='100%';" onmouseout="document.getElementById('foodpic').style.opacity='0'; document.getElementById('foodtext').style.opacity='0';"> Food </DIV> </TD>
+	</TR>
+	<TR>
+		<TD> <DIV class=leftable onmouseover="document.getElementById('commoditypic').style.opacity='100%'; document.getElementById('commoditytext').style.opacity='100%';" onmouseout="document.getElementById('commoditypic').style.opacity='0'; document.getElementById('commoditytext').style.opacity='0';"> Collapse in Commodity Prices </DIV> </TD>
+	</TR>
+	<TR>
+		<TD> <DIV class=leftable onmouseover="document.getElementById('shortagepic').style.opacity='100%'; document.getElementById('shortagetext').style.opacity='100%';" onmouseout="document.getElementById('shortagepic').style.opacity='0'; document.getElementById('shortagetext').style.opacity='0';"> Food Shortage?</DIV> </TD>
+	</TR>
+</TABLE>
+
+<IMG id=tourismpic class=picsss src="websiteimages/tourism.jpg"> </IMG>
+<DIV id=tourismtext class=mainsmoltext> Tourism in many countries has decreased drastically due to the virus. At first, tourists feared that they might contract the virus while vacationing; however, as time passed and the number of infected cases increased in numerous countries, people were soon required to undergo quarantine, which meant that they could not leave their houses, let alone travel abroad. Countries whose economies depend heavily on the spending of tourists are suffering, such as the Maldives, Thailand, and Macao. Another consequence of the lack of tourists is the lack of hard currency such as coins and dollar bills. </DIV>
+
+<IMG id=schoolpic class=picsss src="websiteimages/schools.png"> </IMG>
+<DIV id=schooltext class=mainsmoltext> Many schools are shut down, and over 368 million children are unable to receive the nutritious meals and snacks that schools provide them, which gives struggling families extra pressure to feed their children. The image above displays school closures in countries as of May 14, 2020. Countries in the darkest orange are under country-wide school closures, countries in the lighter orange are under localized school closures, countries in blue are not under any school closures, and those in grey do not have any data. </DIV>
+
+<IMG id=commoditypic class=picsss src="websiteimages/commodity.png"> </IMG>
+<DIV id=commoditytext class=mainsmoltext> A collapse in the stock market has caused many countries' economies to grow weaker. Also, the price of many commodities has fallen significantly, as displayed in the graph above. One such commodity is oil, and many countries whose economies depend profits made from exported oil, such as Iran, are largely affected as they have less money to spend on other important products such as food and medicine.  </DIV>
+
+<IMG id=businesspic class=picsss src="websiteimages/business.jpg"> </IMG>
+<DIV id=businesstext class=mainsmoltext> Due to nation-wide lockdowns, many businesses have closed as customers decreased to nearly none, resulting in a large number of people losing their jobs and their source of income. They have barely enough to survive through the day, so they have to sometimes skip meals to save money. 
+ </DIV>
+
+ <IMG id=foodpic class=picsss src="websiteimages/food.jpg"> </IMG>
+<DIV id=foodtext class=mainsmoltext> The production and transporting of food has been disrupted by the actions taken by countries to contain the virus. This has slowed the process of distributing food amongst the people. Also, food distribution systems in poorer nations are more labor intensive, so these systems might be more vulnerable to coronavirus. 
+ </DIV>
+
+ <IMG id=shortagepic class=picsss src="websiteimages/shortage.jpg"> </IMG>
+<DIV id=shortagetext class=mainsmoltext>  There is no mass starvation or food shortage yet, but there are problems in the planting, growing, harvesting, and transporting of food products. Poorer countries, especially those that rely heavily on imported food for their food source, will struggle in the near future. Soup kitchens and places where food is distributed have been crowding up with more and more famished people. 
+ </DIV>
+
+
+ <DIV id="footerbox"> 
+	</DIV>
+	<DIV class='reftext'>
+		<DIV id="referencetitle"> External References </DIV>
+  	<TABLE id='rlist'>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.worldbank.org/"> World Bank </a> </TD>
+  	</TR>
+
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.mercycorps.org/"> Mercy Corps </a> </TD>
+ 	 </TR>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.un.org/sustainabledevelopment/hunger/"> UN Hunger Goal </a> </TD>
+ 	 </TR>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.wfp.org/"> United Nations World Food Programme </a> </TD>
+ 	 </TR>
+ 	 <TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.thp.org/"> The Hunger Project </a> </TD>
+  	</TR>
+ 	 <TR>
+      <TD style="padding-bottom: 2vw;"> <a href="https://www.unicef.org/"> UNICEF </a> </TD>
+ 	 </TR>
+	</TABLE>
+	</DIV>
+	<DIV id='vertical1'> </DIV>
+<!-- Form --->
+<div id="mc_embed_signup">
+<form action="https://gmail.us10.list-manage.com/subscribe/post?u=fbdb59f88ddf5888285b62961&amp;id=50a07a499d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2 id="subscribetext">Subscribe to Save Stomachs</h2>
+<div class="indicates-required" style="color:#7C98B3; padding-bottom:3%; font-size:1vw;"><span class="asterisk" style="color:#7C98B3;">*</span> Indicates field required</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-EMAIL" class="info" style="font-size:1.1vw;">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" style="font-size:1vw;" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-FNAME" class="info" style="font-size:1.1vw;">  First Name </label> 
+	<input type="text" value="" style="font-size:1vw;" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-LNAME" class="info" style="font-size:1.1vw;">Last Name </label>
+	<input type="text" value=""  style="font-size:1vw;" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group size1of2" style="padding-bottom:3%;">
+	<label for="mce-BIRTHDAY-month" class="info" style="font-size:1.1vw;">Birthday </label>
+	<div class="datefield">
+		<span class="subfield monthfield"><input class="birthday " style="font-size:1vw;" type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" style="font-size:1vw;"></span> / 
+		<span class="subfield dayfield"><input class="birthday " style="font-size:1vw;" type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span> 
+		<span class="small-meta nowrap" style="font-size:0.9vw; color:#7C98B3;">( mm / dd )</span>
+	</div>
+</div>	
+<div id="mce-responses" class="clear" style="padding-bottom:3%;">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>   
+
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"> <input type="text" name="b_fbdb59f88ddf5888285b62961_50a07a499d" tabindex="-1" value="">
+
+    </div>
+    <div>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="box"> </div>
+</form>
+<DIV id="citationbutton"> Citations here </DIV>
+<DIV id="checkout"> Check out the Citations </DIV>
+<DIV id='vertical2'> </DIV>
+<DIV id='join'> JOIN THE FIGHT. </DIV>
+<DIV id=contactus> Contact us at <SPAN style="font-size: 2vw; font-weight: bold;"> onanemptystomach.contact@gmail.com. </SPAN> </DIV>
+</BODY>
+</HTML>

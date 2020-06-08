@@ -1,0 +1,740 @@
+<HTML>
+<HEAD>
+	<STYLE type='text/css'>
+		#mainheader{
+  font-family:'Avenir';
+}
+    #container {
+      width: 101vw;
+      height: 6vw;
+      top: -1%;
+      left: -1%;
+      position: fixed;
+      background-color: #F5F4DB;
+      z-index: 20;
+    }
+    #sidebtn{
+      z-index:1;
+      margin-left: 0.5vw;
+      position: fixed;
+      width: 5%;
+      cursor: pointer;
+      z-index: 21;
+    }
+.sidenav{
+  width: 0;
+  height: 101%;
+  top: -1%;
+  left: -1%;
+  z-index: 21;
+  position: fixed;
+  background-color: #F5F4DB;
+  border: solid 0.5px white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 7%;
+  font-family: 'Avenir';
+
+}
+.sidenav a{
+  padding: 5% 10% 5% 16%;
+  text-decoration: none;
+  font-size: 2vw;
+  display: block;
+  transition: 0.3s;
+  color: #ACCBE1;
+  position: relative;
+}
+  
+.sidenav a:hover{
+  color: #7C98B3;
+}
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  font-size: 4vw;
+  margin-left: 67%;
+
+}
+
+#logo{
+  z-index:21;
+  position: absolute;
+  margin-top: 1vw;
+  margin-left: 33vw;
+  position: fixed;
+  width: 34vw;
+}
+
+
+#donatebutton{
+  width: 8.5vw;
+  height: 2.5vw;
+  background-color: #C0D6E3;
+  position: fixed;
+  margin-top: -1.5vw;
+  z-index:21;
+  margin-left: 88vw;
+  font-family:'Avenir';
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  padding-top: 0.5vw;
+  -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      transition: all 0.15s ease;
+
+}
+#donatebutton:hover{
+  background-color: #637081;
+  cursor: pointer;
+}
+#logo2{
+  width:15vw;
+  padding-top:0.5vw;
+  margin-left: 42vw;
+  position: fixed;
+  z-index:20;
+}
+
+		#pagetitle{
+			font-family: 'Avenir';
+			font-size: 4vw;
+			text-align: center;
+			color: #66798C;
+			margin-top: 5%;
+			position: relative;
+		}
+		#linetop1{
+			border-bottom: solid #66798C 0.14vw;
+			width: 35vw;
+			position: absolute;
+			top: 7%;
+			margin-left: 32.5vw;
+		}
+		#linebottom1{
+			border-bottom: solid #66798C 0.14vw;
+			width: 15vw;
+			position: absolute;
+			margin-left: 41.8vw;
+			padding-top: 0.5vw;
+		}
+		#subtitle1{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 15%;
+			margin-left: 2%;
+		}
+		#text1{
+			opacity: 1;
+			margin-left: 2%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 10%;
+			padding-right: 39%
+		}
+		#underline1{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 5vw;
+			margin-left: 2%;
+			top: 30%;
+		}
+		#hungercycle{
+			width: 35%;
+			padding-right: 2%;
+			top: 30%;
+			position: absolute;
+			left: 62%;
+		}
+		#subtitle2{
+			font-family: 'Avenir';
+			font-size: 3vw;
+			text-align: center;
+			color: #66798C;
+			margin-top: 7%;
+			position: relative;
+		}
+		#linetop2{
+			border-bottom: solid #66798C 0.14vw;
+			width: 35vw;
+			position: absolute;
+			top: 72%;
+			margin-left: 32.5vw;
+			padding-bottom: 5%;
+		}
+		#linebottom2{
+			border-bottom: solid #66798C 0.14vw;
+			width: 15vw;
+			position: absolute;
+			margin-left: 41.8vw;
+			padding-top: 0.5vw;
+		}
+		#subtitle3{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 15%;
+			margin-left: 2%;
+		}
+		#underline3{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 8vw;
+			margin-left: 2%;
+			top: 96%;
+		}
+		#text3{
+			opacity: 1;
+			margin-left: 2%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 10.5%;
+			padding-right: 45%
+		}
+		#subtitle4{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 27%;
+			padding-right: 2%;
+			margin-left: 78.5%;
+			align-items: flex-end;
+		}
+		#text4{
+			opacity: 1;
+			margin-left: 46%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 18%;
+		}
+		#underline4{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 34.7vw;
+			margin-left: 86%;
+			top: 96%;
+		}
+		#subtitle5{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 27%;
+			margin-left: 2%;
+		}
+		#underline5{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 61.7vw;
+			margin-left: 2%;
+			top: 96%;
+		}
+		#text5{
+			opacity: 1;
+			margin-left: 2%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 18.5%;
+			padding-right: 39%
+		}
+		#subtitle6{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 26%;
+			padding-right: 2%;
+			margin-left: 87%;
+			align-items: flex-end;
+		}
+		#text6{
+			opacity: 1;
+			margin-left: 53%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 17.5%;
+		}
+		#underline6{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 50.25vw;
+			margin-left: 86%;
+			top: 155%;
+		}
+		#subtitle7{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 20%;
+			margin-left: 2%;
+		}
+		#underline7{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 111.5vw;
+			margin-left: 2%;
+			top: 96%;
+		}
+		#text7{
+			opacity: 1;
+			margin-left: 2%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 14.5%;
+			padding-right: 43%
+		}
+		#subtitle8{
+			font-family: 'Avenir';
+			font-size: 2vw;
+			color: #66798C;
+			position: relative;
+			top: 27%;
+			padding-right: 2%;
+			margin-left: 67.5%;
+			align-items: flex-end;
+		}
+		#text8{
+			opacity: 1;
+			margin-left: 45%;
+			margin-right: 2%;
+			position: relative;
+			padding-top: 19.5%;
+		}
+		#underline8{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: 17.25vw;
+			margin-left: 86%;
+		}
+		.causeimages {
+			padding-right: 2%;
+			padding-left: 2%;
+		}
+		#povertycause {
+			position: absolute;
+			margin-left: 54.5%;
+			top: 95%;
+			padding-top: 2%;
+			height: 70%;
+
+		}
+		#naturaldisastercause {
+			position: absolute;
+			padding-top: 2%;
+			height: 40%;
+			top: 139%;
+			margin-left: -2%;
+
+		}
+		#climatechangecause {
+			position: absolute;
+			padding-top: 2%;
+			height: 36%;
+			top: 185%;
+			margin-left: 63.5%;
+
+		}
+		#conflictcause {
+			position: absolute;
+			padding-top: 2%;
+			height: 36%;
+			top: 230%;
+			margin-left: 2%;
+
+		}
+		#politicalinstabilitycause {
+			position: absolute;
+			padding-top: 2%;
+			height: 43.5%;
+			top: 275%;
+			margin-left: 58.9%;
+
+		}
+		#productioncause {
+			position: absolute;
+			padding-top: 2%;
+			height: 35.9%;
+			top: 320%;
+			margin-left: -3.5%;
+		}
+
+		#subtitlea{
+			font-family: 'Avenir';
+			font-size: 3vw;
+			text-align: center;
+			color: #66798C;
+			margin-top: 12%;
+			position: relative;
+		}
+		#linetopa{
+			border-bottom: solid #66798C 0.14vw;
+			width: 35vw;
+			position: absolute;
+			top: 358%;
+			margin-left: 32.5vw;
+			padding-bottom: 5%;
+		}
+		#linebottoma{
+			border-bottom: solid #66798C 0.14vw;
+			width: 15vw;
+			position: absolute;
+			margin-left: 41.8vw;
+			padding-top: 0.5vw;
+		}
+
+		#effecttitle1{
+			padding-top: 2%;
+			padding-left: 2%;
+		}
+		#effecttext1{
+			padding-top: 2%;
+			padding-left: 2%;
+			padding-right: 2%;
+		}
+		#effectunderline1{
+			border-bottom: solid #66798C 2px;
+			position: absolute;
+			width: 10vw;
+			margin-top: -9.5%;
+			margin-left: 2%;
+		}
+
+		#graph1{
+			height: 80%
+		}
+		#graph2{
+			height: 80%
+		}
+
+	#footerbox{
+		width: 101vw;
+		top:248vw;
+		left:-1%;
+		height: 28vw;
+		z-index:-1;
+		position: absolute;
+		background-color: #F5F4DB;
+		overflow-x: hidden;
+		}
+.reftext{
+  font-family: 'Avenir';
+  padding-left: 1vw;
+  margin-top: -4vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.reftext a{
+		text-decoration: none;
+	}
+#rlist{
+		text-align: center;
+		left: 2%;
+		  font-size: 1.2vw;
+	}
+
+.info{
+		color: #7C98B3;
+		font-size:1.1vw;
+	}
+#subscribetext{
+	font-family:'Avenir';
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	position: relative;
+	margin-top: -3vw;
+}
+#mc_embed_signup{
+	padding-left: 73%;
+	margin-top: 9.4vw;
+	font-family:'Avenir';
+	z-index: 1;
+}
+
+.box{
+	width:10%;
+	height: 5.3%;
+  background-color: #7C98B3;
+  position: absolute;
+  font-family: 'Avenir';
+  color: white;
+  font-size:1.6vw;
+  border: none;
+  z-index: 1;
+  -webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+.box:hover{
+	cursor: pointer;
+	background-color:#66798C;
+	z-index: 1;
+}
+
+#vertical1{
+	border-left: 2px solid #66798C;
+	height: 23vw;
+	z-index: 3;
+	position: absolute;
+	margin-left: 24.5vw;
+	margin-top: 6vw;
+}
+#citationbutton{
+	width:12vw;
+	height: 2.8vw;
+	background-color: #7C98B3;
+	z-index: 6;
+	position: absolute;
+	margin-left: -30.5vw;
+	margin-top: -13vw;
+	font-family: 'Avenir';
+  	color: white;
+  	font-size:1.6vw;
+  	text-align: center;
+  	padding-top: 0.5vw;
+  	-webkit-transition: all 0.15s ease;
+			-moz-transition: all 0.15s ease;
+			-ms-transition: all 0.15s ease;
+			-o-transition: all 0.15s ease;
+			transition: all 0.15s ease;
+}
+#citationbutton:hover{
+	background-color: #66798C;
+	cursor: pointer;
+}
+#checkout{
+font-family:'Avenir';
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	font-weight: bold;
+	margin-top:-18vw;
+	margin-left: -35vw;
+	position: absolute;
+}
+#referencetitle{
+	position: relative;
+	color: #637081;
+	font-size:1.9vw;
+	z-index: 1;
+	font-weight: bold;
+	margin-top: 10vw;
+	padding-bottom: 1vw;
+	margin-left: 2.5vw;
+}
+#vertical2{
+	border-left: 2px solid #66798C;
+	height: 23vw;
+	z-index: 3;
+	position: absolute;
+	margin-left: -2.5vw;
+	margin-top: -18vw;
+}
+#join{
+	font-family: 'Avenir';
+	font-size: 3vw;
+	color: #EF7E7E;
+	margin-left: -35.5vw;
+	margin-top: -7vw;
+	position: absolute;
+}
+#contactus{
+	font-family:'Avenir';
+	font-size: 1.5vw;
+	margin-left: -44vw;
+	margin-top: -2vw;
+	color: #637081;
+	margin-right: 25vw;
+	position: absolute;
+}
+	</STYLE>
+</HEAD>
+<BODY>
+
+	<script>
+  function openNav (){
+    document.getElementById("sidenavmain").style.width="20%";
+    document.getElementById("cause").style.opacity="100%";
+    document.getElementById("don").style.opacity="100%";
+    document.getElementById("org").style.opacity="100%";  
+    document.getElementById("covid").style.opacity="100%";
+    document.getElementById("u").style.opacity="100%";
+    document.getElementById("about").style.opacity="100%";
+    document.getElementById("index").style.opacity="100%";
+  }
+  function closeNav (){
+    document.getElementById("sidenavmain").style.width="0";
+    document.getElementById("index").style.opacity="0";
+    document.getElementById("cause").style.opacity="0";
+    document.getElementById("don").style.opacity="0";
+    document.getElementById("org").style.opacity="0"; 
+    document.getElementById("covid").style.opacity="0";
+    document.getElementById("u").style.opacity="0";
+    document.getElementById("about").style.opacity="0";
+  }
+  </script>
+
+<DIV id='container'>
+</DIV>
+
+  <DIV id='sidenavmain' class='sidenav'> 
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+<a href="index.html" id="index"> Home </a>
+    <a href="causeandeffect.html" id="cause"> Causes and Effects </a>
+    <a href="file:///Users/elliechen/Documents/GitHub/onanemptystomach.github.io/donations.html" id="org"> Organizations </a>
+    <a href="file:///Users/elliechen/Documents/GitHub/onanemptystomach.github.io/donations.html" id="don"> Donations </a>
+    <a href="file:///Users/elliechen/Documents/GitHub/onanemptystomach.github.io/whatucando.html" id="u"> What You Can Do to Help and More </a>
+    <a href="file:///Users/elliechen/Documents/GitHub/onanemptystomach.github.io/covid.html" id="covid"> COVID-19 </a>
+    <a href="file:///Users/elliechen/Documents/GitHub/onanemptystomach.github.io/aboutus.html" id="about"> About Us </a>
+  </DIV>
+  <SPAN onclick="openNav();">  <IMG id='sidebtn' src='websiteimages/menu button.png'> </IMG> </SPAN>
+  
+</DIV>
+ <IMG id='logo' src="websiteimages/header_text.png" onmouseover="document.getElementById('logo2').style.opacity='100%'; document.getElementById('logo').style.opacity='0';" onmouseout="document.getElementById('logo2').style.opacity='0'; document.getElementById('logo').style.opacity='100%';"> </IMG>
+
+
+  <img id=logo2 style="opacity: 0;" src="websiteimages/onanemptystomachlogo1.png"> </img>
+<br></br>
+<a href="file:///Users/elliechen/Documents/GitHub/onanemptystomach.github.io/donations.html"> <DIV id='donatebutton'> Donate</DIV> </a>
+<DIV class='about_section'> 
+	<DIV id='pagetitle' onmouseover="document.getElementById('pagetitle').style.color='#ACCBE1';" onmouseout="document.getElementById('pagetitle').style.color='#66798C';">CAUSES AND EFFECTS</DIV>
+	<DIV id='linetop1'></DIV>
+	<DIV id='linebottom1'></DIV>
+	<DIV id='underline1'></DIV>
+	<DIV id='subtitle1'>THE HUNGER CYCLE</DIV>
+	<DIV id='text1' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">Hunger exists in a cycle called the hunger cycle. The hunger cycle is a cycle of poverty that many people are currently trapped in. Malnourished mothers give birth to undernourished babies. These babies grow up with not enough food which could lead to physical stunting and a slower mental development. If these children can afford to go to school, chronic health issues prevent them from doing well and gaining a proper education. The lack of education as a child prevents adults from finding a sustainable job, becoming trapped in poverty. If the adult starts a family, they will not have enough money to provide for it, causing the cycle to repeat. </DIV>
+	<IMG id='hungercycle' src='websiteimages/hungercycle.png'></IMG>
+	<DIV id='subtitle2' onmouseover="document.getElementById('subtitle2').style.color='#ACCBE1';" onmouseout="document.getElementById('subtitle2').style.color='#66798C';">CAUSES</DIV>
+	<DIV id='linetop2'></DIV>
+	<DIV id='linebottom2'></DIV>
+	<DIV id='subtitle3'>POVERTY</DIV>
+	<DIV id='underline3'></DIV>
+	<DIV id='text3' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">Over 1/3 of the world's population live in poverty, everyday these people have to spend 60-80% of their income on food. Often due to financial difficulties, these people have to skip many meals.</DIV>
+	<DIV id='subtitle4'>NATURAL DISASTER</DIV>
+	<DIV id='underline4'></DIV>
+	<DIV id='text4' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">Half of the world's population grow their own food. Natural disasters cut off food chains, resulting in a lack of food. Events such as droughts can cause a decline in food security.</DIV>
+	<DIV id='subtitle5'>CLIMATE CHANGE</DIV>
+	<DIV id='underline5'></DIV>
+	<DIV id='text5' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">Climate change causes weather shocks that can cut off food chains.</DIV>
+	<DIV id='subtitle6'>CONFLICT</DIV>
+	<DIV id='underline6'></DIV>
+	<DIV id='text6' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">The prevelance of hunger in lower-middle income regions is 4% higher than the prvealence in other lower-middle income regions. 489 million of the 815 million people suffering from hunger are living through a conflict. Conflict can affect food and agricultural production.</DIV>
+	<DIV id='subtitle7'>POLITICAL INSTABILITY</DIV>
+	<DIV id='underline7'></DIV>
+	<DIV id='text7' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">Political instability can cause decrease of the economy, which causes decrease in the value of currency. This leads to an increase in poverty.</DIV>
+	<DIV id='subtitle8'>FOOD & AGRICULTURAL VALUE</DIV>
+	<DIV id='underline8'></DIV>
+	<DIV id='text8' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">The effectiveness of food production varies based on the region. Areas with less effective production have less food available for the community.</DIV>
+
+	<IMG src='websiteimages/povertycause.png' id='povertycause' class='causeimages'></IMG>
+	<IMG src='websiteimages/naturaldisastercause.png' id='naturaldisastercause' class='causeimages'></IMG>
+	<IMG src='websiteimages/climatechangecause.jpg' id='climatechangecause' class='causeimages'></IMG>
+	<IMG src='websiteimages/conflictcause.png' id='conflictcause'></IMG>
+	<IMG src='websiteimages/politicalinstabilitycause.png' id='politicalinstabilitycause'></IMG>
+	<IMG src='websiteimages/productioncause.png' id='productioncause'></IMG>
+
+	<DIV id='subtitlea' onmouseover="document.getElementById('subtitlea').style.color='#ACCBE1';" onmouseout="document.getElementById('subtitlea').style.color='#66798C';">EFFECTS</DIV>
+	<DIV id='linetopa'></DIV>
+	<DIV id='linebottoma'></DIV>
+
+	<DIV id='effecttitle1'><SPAN style="font-family: 'Avenir'; font-size: 2vw; color: #66798C;">UNDERNUTRITION</DIV>
+	<DIV id='effecttext1' style="font-family: 'Avenir'; font-size: 1.5vw; color: #66798C;">Undernutrition and fetal growth restrictions cause 45% of all child deaths annually, or 3.1 million deaths. Undernutrition can include both wasting and stunting. Wasting is defined as having a low weight for the individual's height, 50.5 milion children under 5 are currently wasted. 2/3 of children wasted are living in Asia, and 1/4 in Africa. Stunting is defined as having a height below average for the individual's age. In 2017, 150 million children were estimated to be stunted, however the prevalence of stunting has decreased by 11% from 2007-2017.</DIV>
+	<DIV id='effectunderline1'></DIV>
+	<TABLE style="padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%; background-color: #C0D6E3; margin-left: 2%; margin-right: 2%; margin-top: 2%; width: 96%;">
+		<TR>
+			<TD style="border: solid #C0D6E3 2vw;"><IMG src='websiteimages/stuntingwastinggraph.png' id='graph1'></TD>
+			<TD style="border: solid #C0D6E3 2vw;"><IMG src='websiteimages/graph 2.jpg' id='graph2'></TD>
+		</TR>
+	</TABLE>
+<DIV id="footerbox" class=''> 
+	</DIV>
+	<DIV class='reftext'>
+		<DIV id="referencetitle"> External References </DIV>
+  	<TABLE id='rlist'>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.worldbank.org/"> World Bank </a> </TD>
+  	</TR>
+
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.mercycorps.org/"> Mercy Corps </a> </TD>
+ 	 </TR>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.un.org/sustainabledevelopment/hunger/"> UN Hunger Goal </a> </TD>
+ 	 </TR>
+  	<TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.wfp.org/"> United Nations World Food Programme </a> </TD>
+ 	 </TR>
+ 	 <TR>
+      <TD style="padding-bottom: 1.5vw;"> <a href="https://www.thp.org/"> The Hunger Project </a> </TD>
+  	</TR>
+ 	 <TR>
+      <TD style="padding-bottom: 2vw;"> <a href="https://www.unicef.org/"> UNICEF </a> </TD>
+ 	 </TR>
+	</TABLE>
+	</DIV>
+	<DIV id='vertical1'> </DIV>
+<!-- Form --->
+<div id="mc_embed_signup">
+<form action="https://gmail.us10.list-manage.com/subscribe/post?u=fbdb59f88ddf5888285b62961&amp;id=50a07a499d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2 id="subscribetext">Subscribe to Save Stomachs</h2>
+<div class="indicates-required" style="color:#7C98B3; padding-bottom:3%; font-size:1vw;"><span class="asterisk" style="color:#7C98B3;">*</span> Indicates field required</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-EMAIL" class="info" style="font-size:1.1vw;">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" style="font-size:1vw;" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-FNAME" class="info" style="font-size:1.1vw;">  First Name </label> 
+	<input type="text" value="" style="font-size:1vw;" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group" style="padding-bottom:3%;">
+	<label for="mce-LNAME" class="info" style="font-size:1.1vw;">Last Name </label>
+	<input type="text" value=""  style="font-size:1vw;" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group size1of2" style="padding-bottom:3%;">
+	<label for="mce-BIRTHDAY-month" class="info" style="font-size:1.1vw;">Birthday </label>
+	<div class="datefield">
+		<span class="subfield monthfield"><input class="birthday " style="font-size:1vw;" type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" style="font-size:1vw;"></span> / 
+		<span class="subfield dayfield"><input class="birthday " style="font-size:1vw;" type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span> 
+		<span class="small-meta nowrap" style="font-size:0.9vw; color:#7C98B3;">( mm / dd )</span>
+	</div>
+</div>	
+<div id="mce-responses" class="clear" style="padding-bottom:3%;">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>   
+
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"> <input type="text" name="b_fbdb59f88ddf5888285b62961_50a07a499d" tabindex="-1" value="">
+
+    </div>
+    <div>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="box"> </div>
+</form>
+<DIV id="citationbutton"> Citations here </DIV>
+<DIV id="checkout"> Check out the Citations </DIV>
+<DIV id='vertical2'> </DIV>
+<DIV id='join'> JOIN THE FIGHT. </DIV>
+<DIV id=contactus> Contact us at <SPAN style="font-size: 2vw; font-weight: bold;"> onanemptystomach.contact@gmail.com. </SPAN> </DIV>
+</BODY>
+</HTML>
